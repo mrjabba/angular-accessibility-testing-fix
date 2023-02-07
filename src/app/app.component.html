@@ -1,0 +1,12 @@
+<h1>Axe aria-errormessage error (during testing)!</h1>
+<label for="foo">foolabel</label>
+<form>
+  <input
+    type="text"
+    id="foo"
+    value="something"
+    [attr.aria-invalid]="true"
+    [attr.aria-errormessage]="axeFooError()"
+  />
+  <div id="foo-error">Here is an error</div>
+</form>
